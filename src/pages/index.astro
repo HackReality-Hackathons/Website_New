@@ -1,0 +1,42 @@
+---
+
+// Ended:✅ For Do:❌
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro'; // Responsive ✅
+import CountdownTimer from '../components/CountdownTimer.astro';
+import AboutSection from '../components/AboutSection.astro';
+import ScheduleSection from '../components/ScheduleSection.astro';
+import SponsorsSection from '../components/SponsorSection.astro';
+import FutureEventsSection from '../components/FutureEventsSection.astro';
+import Footer from '../components/Footer.astro';
+import Card from '../components/FirstTitle.astro';
+
+import '../styles/global.css';
+import '../styles/script.js';
+---
+
+<Layout title="Future Hack 2024">
+  <Navbar class="fade-in"/>
+  <main class="container mx-auto px-4 pt-12 text-white fade-in">
+    <Card class="fade-in hover-tilt"/>
+    <CountdownTimer targetDate="2024-12-13T23:59:59" class="fade-in"/>
+    <AboutSection class="fade-in"/>
+    <ScheduleSection class="fade-in"/>
+    <SponsorsSection class="fade-in"/>
+    <FutureEventsSection class="fade-in"/>
+  </main>
+  <Footer class="fade-in"/>
+</Layout>
+
+
+<!--
+
+Implementar correctamente el Contador ✅
+Implementar los iconos correctamente ✅
+Buscar Cursor
+Implementar Navbar Astro-Navbar
+Hacer el logo webp o que no parpadee en la carga
+Buscar Fondo por JS (TypeScript) para que no se un fondo plano
+Hacer que el fade-in sea conforme se vaya bajando la página
+
+-->
