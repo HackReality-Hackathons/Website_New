@@ -1,0 +1,30 @@
+---
+
+// Ended:✅ For Do:❌
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro'; // Responsive ❌
+import CountdownTimer from '../components/CountdownTimer.astro';
+import AboutSection from '../components/AboutSection.astro';
+import ScheduleSection from '../components/ScheduleSection.astro';
+import SponsorsSection from '../components/SponsorSection.astro';
+import FutureEventsSection from '../components/FutureEventsSection.astro';
+import Footer from '../components/Footer.astro';
+import Card from '../components/FirstTitle.astro';
+---
+
+<Layout title="Future Hack 2024">
+  <Navbar />
+  <main class="container mx-auto px-4 pt-12 text-white">
+    <Card />
+    <CountdownTimer targetDate="2024-12-13T23:59:59" />
+    <AboutSection />
+    <ScheduleSection />
+    <SponsorsSection />
+    <FutureEventsSection />
+  </main>
+  <Footer />
+</Layout>
+
+
+<!-- Implementar correctamente el Contador
+Implementar los iconos correctamente -->
